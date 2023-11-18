@@ -6,7 +6,7 @@ const port = process.env.PORT || 3002;
 // Syncing all the models at once:
 conn.sync({ alter: true }).then(() => {
   server.get("/", (req, res) => {
-    res.send('Bienvenidos al Backend');
+    res.send('Bienvenidos al Backend de eCommerce');
   });
 
   server.listen(port, () => {
