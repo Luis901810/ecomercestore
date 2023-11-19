@@ -5,6 +5,7 @@ const path = require("path");
 //const { DB_USER, DB_PASSWORD, DB_HOST } = process.env;
 
 
+
 const sequelize = new Sequelize(process.env.POSTGRES_URL, {
   dialect: "postgres",
   logging: false,
