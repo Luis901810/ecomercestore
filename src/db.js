@@ -9,9 +9,12 @@ const path = require("path");
 const sequelize = new Sequelize(process.env.POSTGRES_URL, {
   dialect: "postgres",
   logging: false,
-  ssl: process.env.DATABASE_URL ? true : false,
+  ssl: true,  // Siempre establecido en true
   dialectOptions: {
-    ssl: process.env.DATABASE_URL ? { require: true, rejectUnauthorized: false } : false,
+    ssl: {
+      require: true,
+      rejectUnauthorized: false, // Puedes ajustar esto según la configuración de tu servidor PostgreSQL
+    },
   },
 });
 
