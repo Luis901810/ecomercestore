@@ -1,7 +1,7 @@
 const server = require("./src/server");
 const { conn } = require("./src/db");
 
-const port = process.env.PORT || 3002;
+const port = process.env.PORT ;
 
 //Syncing all the models at once:
 conn.sync({ alter: true }).then(() => {
