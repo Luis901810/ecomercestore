@@ -4,7 +4,7 @@ module.exports = (sequelize) => {
   sequelize.define(
     "Orders",
     {
-      order: {
+      id: {
         type: DataTypes.INTEGER,
         primaryKey: true,
         autoIncrement: true,
@@ -32,7 +32,7 @@ module.exports = (sequelize) => {
       },
 
       userId: {
-        type: DataTypes.UUIDV4,
+        type: DataTypes.UUID,
         allowNull: false,
         references: {
           model: "Users",
