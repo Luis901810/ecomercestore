@@ -16,7 +16,7 @@ const mainRouter = Router();
 
 //  Ruta Principal
 mainRouter.get("/", (req, res) => {
-    res.send('Bienvenidos al Backend de eCommerce');
+    res.send('Bienvenidos al Backend de eCommerce proyecto de pruebas');
   });
 
 // Configurar los routers
