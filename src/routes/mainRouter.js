@@ -9,14 +9,14 @@ const videogamesRouter = require("./videogamesRouter");
 const bannersRouter = require("./bannersRouter");
 const reviewsRouter = require("./reviewsRouter");
 const ordersRouter = require("./ordersRouter");
-const mercadoPago = require("./mercadoPago");// edward
+const mercadoPago = require("./mercadoPago");
 
 
 const mainRouter = Router();
 
 //  Ruta Principal
 mainRouter.get("/", (req, res) => {
-    res.send('Bienvenidos al Backend de eCommerce proyecto de pruebas');
+    res.send('Bienvenidos al Backend de eCommerce');
   });
 
 // Configurar los routers
