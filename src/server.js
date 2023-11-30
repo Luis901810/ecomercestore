@@ -10,7 +10,7 @@ require('./db.js');
 const server = express();
 
 server.use(cors({
-  origin: ['http://localhost:3000', 'https://ecomercefrom2.vercel.app'],
+  origin: ['http://localhost:3000', 'https://ecomercefromdeploy.vercel.app'],
   credentials: true,
   methods: ['GET', 'POST', 'OPTIONS', 'PUT', 'DELETE'],
   allowedHeaders: ['Origin', 'X-Requested-With', 'Content-Type', 'Accept'],
